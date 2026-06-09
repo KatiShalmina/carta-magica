@@ -1,0 +1,47 @@
+@use './reset';
+
+:root {
+  scroll-behavior: smooth;
+
+  --logo-font: "Belleza", system-ui, sans-serif;
+  --body-font1: "Alegreya Sans", system-ui, sans-serif;
+  --body-font2: "Nunito Sans", system-ui, sans-serif;
+
+  --color-primary: #f7c873;
+  --color-secondary: #f5e5b8;
+
+  --bg-primary: #1d223b;
+
+  --button-primary: #005a32;
+  --hover-primary: #238b45;
+  --hover-secondary: #373a6d;
+
+  --gradient-primary: linear-gradient(to left, #b66f1c, var(--color-primary));
+  --gradient-secondary: linear-gradient(to bottom, var(--bg-primary), #4f5ca1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

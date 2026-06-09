@@ -1,0 +1,33 @@
+#root {
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 1rem;
+  font-family: var(--logo-font);
+  background-color: var(--bg-primary);
+}
+
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding: 1.2rem;
+}
+
+.switch-button {
+  padding: 8px;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  transition: background-color 0.4s ease;
+}
+
+.switch-button:hover {
+  background-color: var(--bg-hover);
+}
+
+.switch-button.is-active {
+  background-color: #591d29;
+}
