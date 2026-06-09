@@ -1,0 +1,18 @@
+:root {
+  scroll-behavior: smooth;
+
+  --logo-font: 'Belleza', system-ui, sans-serif;
+  --body-font: 'Alegreya Sans', system-ui, sans-serif;
+
+  --color-primary: #f7c873;
+  --color-secondary: #f5e5b8;
+
+  --bg-primary: #1d223b;
+
+  --button-primary: #005a32;
+  --hover-primary: #238b45;
+  --hover-secondary: #373a6d;
+
+  --gradient-primary: linear-gradient(to left, #b66f1c, var(--color-primary));
+  --gradient-secondary: linear-gradient(to bottom, var(--bg-primary), #4f5ca1);
+}

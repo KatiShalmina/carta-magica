@@ -1,4 +1,4 @@
-import Gallery1 from "../pages/components/gallery/Gallery1"
+import Gallery1 from "../components/Gallery1"
 
 const slidesFeature3 = [
   {
