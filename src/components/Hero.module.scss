@@ -51,20 +51,12 @@
 
 .mainTitle {
   font-family: var(--logo-font);
-  font-size: 2rem;
+  font-size: clamp(2rem, 4vw, 4.3rem);
   line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
-
-  @media (min-width: 470px) {
-    font-size: 2.5rem;
-  }
-
-  @media (min-width: 1280px) {
-    font-size: 3rem;
-  }
 }
 
 .introduction {
@@ -92,4 +84,9 @@
 .tagline {
   max-width: 65ch;
   text-transform: uppercase;
+}
+
+.videoWrapper {
+  width: 100%;
+  max-width: 1440px;
 }

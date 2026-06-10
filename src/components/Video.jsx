@@ -4,8 +4,8 @@ import PlayButton from '../assets/icons/play.svg?react'
 
 export default function Video({
   videoId,
-  cover480,
-  cover1024,
+  cover800,
+  cover1280,
   coverOriginal,
 }) {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -28,8 +28,8 @@ export default function Video({
         className={styles.videoCover}
         onClick={() => setIsPlaying(true)}
         style={{
-          '--cover480': `url(${cover480})`,
-          '--cover1024': `url(${cover1024})`,
+          '--cover800': `url(${cover800})`,
+          '--cover1280': `url(${cover1280})`,
           '--coverOriginal': `url(${coverOriginal})`,
         }}
       >

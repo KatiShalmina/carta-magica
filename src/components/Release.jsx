@@ -1,5 +1,4 @@
 import styles from './Release.module.scss'
-import Gallery2 from './Gallery2'
 
 export default function Release() {
   return (
@@ -13,7 +12,6 @@ export default function Release() {
           <li className={styles.releaseItem}>Add your own unique buildings as PNGs.</li>
           <li className={styles.releaseItem}>We’ll keep building new modules and settings based on your feedback.</li>
         </ul>
-      <Gallery2 />
       </div>
     </section>
   )

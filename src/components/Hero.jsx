@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import styles from './Hero.module.scss'
-import videoImg from '/video-img.png'
+import Video from './Video'
 
 export default function Hero() {
   const [expanded, setExpanded] = useState(false)
@@ -77,8 +77,13 @@ export default function Hero() {
           )}
         </div>
 
-        <div className={styles.videoContainer}>
-          <img src={videoImg} alt='Video' />
+        <div className={styles.videoWrapper}>
+          <Video
+            videoId='JMBw_RcDbEQ'
+            coverOriginal='/images/video-covers/original/placeholder-image.webp'
+            cover1280='/images/video-covers/1280/placeholder-image.webp'
+            cover800='/images/video-covers/800/placeholder-image.webp'
+          />
         </div>
 
         <p className={styles.tagline}>Carta Magica builds custom cities for any setting. Pick what matters for your lore — the layout, the landmarks, the mood — and let the app fill in the streets, shops, and alleys. Fine-tune the map to whatever direction your players decide to explore.</p>

@@ -18,13 +18,13 @@
   cursor: pointer;
   background-size: cover;
   background-position: center;
-  background-image: var(--cover480);
+  background-image: var(--cover800);
 
-  @media (min-width: 600px) {
-    background-image: var(--cover1024);
+  @media (min-width: 640px) {
+    background-image: var(--cover1280);
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 1280px) {
     background-image: var(--coverOriginal);
   }
 }
@@ -55,7 +55,7 @@
   background: transparent;
   cursor: pointer;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1280px) {
     width: 140px;
     height: 140px;
   }
@@ -66,7 +66,7 @@
   width: 80px;
   height: 80px;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1280px) {
     width: 140px;
     height: 140px;
   }

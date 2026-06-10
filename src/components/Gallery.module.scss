@@ -1,0 +1,91 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+  width: 100%;
+}
+
+.previewButton {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.previewImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.previewCaption,
+.caption,
+.lightboxCaption {
+  display: block;
+  margin-top: .7rem;
+  color: var(--gold-color);
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mobileGallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.figure,
+.lightboxFigure {
+  margin: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: rgba(0, 0, 0, .92);
+}
+
+.lightboxInner {
+  width: min(1400px, 100%);
+}
+
+.closeButton {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1001;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.lightboxImage {
+  display: block;
+  width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+}
+
+.thumbsSlider {
+  margin-top: 1.2rem;
+}
+
+.thumbImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

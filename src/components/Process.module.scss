@@ -35,25 +35,19 @@
 }
 
 .processWrapper {
-  padding: 4.3rem 1.2rem 2rem;
+  padding-top: 4.3rem;
+  padding-right: clamp(1.2rem, 4vw, 4.3rem);
+  padding-bottom: 3rem;
+  padding-left: clamp(1.2rem, 4vw, 4.3rem);
   font-size: 1.2rem;
-
-  @media (min-width: 650px) {
-    text-align: center;
-  }
+  text-align: center;
 
   @media (min-width: 800px) {
-    padding: 5.2rem 1.7rem 3.6rem;
-  }
-
-  @media (min-width: 1014px) {
-    padding: 5.2rem 1.7rem;
+    padding-top: 5.2rem;
   }
 
   @media (min-width: 1280px) {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 6.2rem 3rem;
+    padding-top: 6.2rem;
     font-size: 1.4rem;
   }
 
@@ -76,93 +70,24 @@
 }
 
 .unitTitle {
-  margin: 0 0 1.4rem;
-  font-size: 1.7rem;
+  margin-bottom: clamp(1.4rem, 4vw, 2.5rem);
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
   line-height: 1.3;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-
-  @media (min-width: 800px) {
-    margin: 0 0 2rem;
-    font-size: 2rem;
-  }
-
-  @media (min-width: 1280px) {
-    margin: 0 0 2.5rem;
-    font-size: 2.5rem;
-  }
 }
 
 .iconUnit {
-  margin: 0 0 1.7rem;
-
-  @media (min-width: 650px) {
-    margin: 0 0 3rem;
-  }
-
-  @media (min-width: 1280px) {
-    margin: 0 0 4.3rem;
-  }
+  margin-bottom: clamp(1.7rem, 4vw, 4.3rem);
 }
 
 .iconUnitText {
-  margin: 0 0 1.7rem;
-
-  @media (min-width: 800px) {
-    margin: 0 0 2rem;
-  }
+  margin-bottom: clamp(1.4rem, 4vw, 2.5rem);
 }
 
-.processList {
-  @media (min-width: 1014px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
-    gap: 1.7rem 1rem;
-  }
-}
-
-.processItem {
-  margin: 0 0 1.7rem;
-
-  @media (min-width: 1014px) {
-    margin: 0;
-  }
-}
-
-.processDescription {
-  margin: 0 0 1.7rem;
-
-  @media (min-width: 1014px) {
-    text-align: left;
-  }
-}
-
-.settingList {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-
-  @media (min-width: 650px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem 3.6rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-}
-
-.settingItem {
-  display: flex;
-  gap: 1.4rem;
-  align-items: center;
-  min-height: 64px;
-  font-size: 1rem;
-  text-transform: uppercase;
-
-  @media (min-width: 650px) {
-    gap: 1rem;
-  }
+.processUnitTitle {
+  margin-bottom: clamp(1.2rem, 4vw, 2rem);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 400;
 }

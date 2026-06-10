@@ -1,34 +1,33 @@
 import styles from './Features.module.scss'
-import { featureUnitData } from '@/data/data.jsx'
-import { isValidElement } from 'react'
-
-function FeatureImages({ items = [] }) {
-  return (
-    <div className={styles.imagesWrapper}>
-      {items.map((it, i) => (
-        <figure key={i} className={styles.image}>
-          <img src={it.src} width={it.width} height={it.height} alt={it.title} />
-          {it.title && <figcaption className={styles.caption}>{it.title}</figcaption>}
-        </figure>
-      ))}
-    </div>
-  )
-}
+import Gallery from './Gallery'
+import { battleImages, loreImages, cityImages } from '../data/gallery'
 
 export default function Features() {
   return (
-    <section className={styles.features} id="features">
-      {featureUnitData.map(unit => (
-        <div className={styles.featureUnit} key={unit.id}>
-          <h2 className={styles.unitTitle}>{unit.title}</h2>
-          <p className={styles.description}>{unit.description}</p>
-          {isValidElement(unit.gallery)
-            ? unit.gallery
-            : Array.isArray(unit.images)
-            ? <FeatureImages items={unit.images} />
-            : null}
-        </div>
-      ))}
+    <section className={styles.features} id='features'>
+      <h1 className='visuallyHidden'>Features</h1>
+      <div className={styles.featureUnit}>
+        <h2 className={styles.unitTitle}>Explore every street!</h2>
+        <p>Zoom in from the city view straight to the battlemap. Every plaza, alley, or tavern is encounter-ready. No extra prep needed. Export your battlemaps straight into your favorite VTT.</p>
+        <Gallery
+          images={battleImages}
+        />
+      </div>
+      <div className={styles.featureUnit}>
+        <h2 className={styles.unitTitle}>Create story with Lore Generator</h2>
+        <p>Drop in your world’s events and key figures, and the Lore Generator fills the gaps — naming streets, taverns, and temples to fit your story.</p>
+        <Gallery
+          images={loreImages}
+        />
+      </div>
+      <div className={styles.featureUnit}>
+        <h2 className={styles.unitTitle}>Make your city alive!</h2>
+        <p>Creation is just the beginning! Every part of the city is editable — landmarks, shadows, building placement, colors, even tiny details.</p>
+        <Gallery
+          images={cityImages}
+          captions
+        />
+      </div>
     </section>
   )
 }
