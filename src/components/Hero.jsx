@@ -24,7 +24,6 @@ export default function Hero() {
   const showShort = !isWide && !expanded
   const showFull  = isWide || expanded
 
-
   return (
     <section className={styles.hero} id='top'>
       <div className={styles.heroWrapper}>
@@ -86,7 +85,7 @@ export default function Hero() {
           />
         </div>
 
-        <p className={styles.tagline}>Carta Magica builds custom cities for any setting. Pick what matters for your lore — the layout, the landmarks, the mood — and let the app fill in the streets, shops, and alleys. Fine-tune the map to whatever direction your players decide to explore.</p>
+        <p className={styles.tagline}>Carta Magica builds custom cities for any setting. Pick what matters for your lore – the layout, the landmarks, the mood – and let the app fill in the streets, shops, and alleys. Fine-tune the map to whatever direction your players decide to explore.</p>
       </div>
     </section>
   )

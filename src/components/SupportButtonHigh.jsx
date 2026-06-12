@@ -4,7 +4,9 @@ export default function SupportButtonHigh() {
   return (
     <a
       className={styles.supportButtonHigh}
-      href="#support"
+      href='https://kickstarter.com'
+      target='_blank'
+      rel='noopener noreferrer'
     >
       <span>Support us on Kickstarter</span>
     </a>

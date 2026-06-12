@@ -190,3 +190,12 @@ export const processSurpriseImages = [
     'surprise-6',
   ),
 ]
+
+export const goalsImages = [
+  galleryImage('3D', '3D-1', '3D view 1'),
+  galleryImage('3D', '3D-2', '3D view 2'),
+  galleryImage('3D', '3D-3', '3D view 3'),
+  galleryImage('3D', '3D-4', '3D view 4'),
+  galleryImage('3D', '3D-5', '3D view 5'),
+  galleryImage('3D', '3D-6', '3D view 6'),
+]

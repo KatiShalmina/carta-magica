@@ -1,4 +1,4 @@
-import styles from './Header.module.scss'
+import styles from './MobileMenu.module.scss'
 
 export default function MobileMenu({ isOpen, onClose, onNavigate }) {
   return (

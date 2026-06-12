@@ -1,6 +1,6 @@
 import styles from './Process.module.scss'
 import Icons from './Icons'
-import Gallery from './Gallery'
+import Slider from './Slider'
 import { processParametersImages, processRoadsImages, processGenerateImages, processSurpriseImages } from '../data/gallery'
 
 export default function Process() {
@@ -16,25 +16,25 @@ export default function Process() {
         <div className={styles.processUnits}>
           <div className={styles.processUnit}>
             <h2 className={styles.processUnitTitle}>Set map parameters (or use ready-to-go template):</h2>
-            <Gallery
+            <Slider
               images={processParametersImages}
             />
           </div>
           <div className={styles.processUnit}>
             <h2 className={styles.processUnitTitle}>Place main roads, districts, and landmarks:</h2>
-            <Gallery
+            <Slider
               images={processRoadsImages}
             />
           </div>
           <div className={styles.processUnit}>
             <h2 className={styles.processUnitTitle}>Hit Generate. Your city is ready to explore!</h2>
-            <Gallery
+            <Slider
               images={processGenerateImages}
             />
           </div>
           <div className={styles.processUnit}>
             <h2 className={styles.processUnitTitle}>Or you can skip all these steps and let Carta Magica surprise you!</h2>
-            <Gallery
+            <Slider
               images={processSurpriseImages}
             />
           </div>

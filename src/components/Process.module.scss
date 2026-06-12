@@ -75,7 +75,6 @@
   line-height: 1.3;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .iconUnit {
@@ -86,8 +85,12 @@
   margin-bottom: clamp(1.4rem, 4vw, 2.5rem);
 }
 
+.processUnit {
+  margin-bottom: clamp(1.2rem, 4vw, 4.3rem);
+}
+
 .processUnitTitle {
   margin-bottom: clamp(1.2rem, 4vw, 2rem);
-  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-size: clamp(1.4rem, 4vw, 1.7rem);
   font-weight: 400;
 }
