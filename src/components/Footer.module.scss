@@ -1,0 +1,33 @@
+.footer {
+  text-align: center;
+  padding-top: 2rem;
+  padding-right: clamp(1.2rem, 4vw, 4.3rem);
+  padding-bottom: 2rem;
+  padding-left: clamp(1.2rem, 4vw, 4.3rem);
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.2rem, 4vw, 2rem);
+}
+
+.logoWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.logoCaption {
+  font-family: var(--logo-font);
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
