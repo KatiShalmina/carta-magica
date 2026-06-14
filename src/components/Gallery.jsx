@@ -1,23 +1,21 @@
-import { useState } from 'react'
 import Lightbox from 'yet-another-react-lightbox'
 import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails'
 import 'yet-another-react-lightbox/styles.css'
 import 'yet-another-react-lightbox/plugins/thumbnails.css'
 
 import styles from './Gallery.module.scss'
-import { useIsDesktop } from '../hooks/useIsDesktop'
+import { useMediaQuery } from '../hooks/useMediaQuery'
 
 export default function Gallery({ images = [], captions = false }) {
-  const isDesktop = useIsDesktop()
-  const [index, setIndex] = useState(-1)
+  const isLightbox = useMediaQuery('(min-width: 1280px)')
 
-  if (!isDesktop) {
+  if (!isLightbox) {
     return (
-      <div className={styles.mobileGallery}>
+      <div className={styles.imageColumn}>
         {images.map(image => (
           <figure className={styles.figure} key={image.src}>
             <img
-              src={image.srcSet?.[0]?.src || image.src}
+              src={image.srcSet?.[1]?.src || image.src}
               srcSet={image.srcSet?.map(item => `${item.src} ${item.width}w`).join(', ')}
               sizes='100vw'
               width={image.width}
@@ -39,9 +37,8 @@ export default function Gallery({ images = [], captions = false }) {
 
   return (
     <Lightbox
-      open={open}
-      index={index}
-      close={() => setIndex(-1)}
+      open
+      close={() => {}}
       slides={images}
       plugins={[Thumbnails]}
       carousel={{

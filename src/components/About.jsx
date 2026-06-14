@@ -74,7 +74,7 @@ export default function About() {
         >
           <label
             htmlFor='email'
-            className={styles.visuallyHidden}
+            className='visuallyHidden'
           >
             Enter you email
           </label>

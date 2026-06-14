@@ -12,6 +12,10 @@
   gap: 1rem;
 }
 
+.mobileGallery figure {
+  margin: 0;
+}
+
 .image {
   @media (min-width: 1280px) {
     width: auto;

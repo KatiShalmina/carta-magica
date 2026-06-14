@@ -14,7 +14,7 @@ export default function Features() {
       </div>
       <Slider
           images={battleImages}
-        />
+      />
       <div className={styles.featureUnit}>
         <h2 className={styles.unitTitle}>Create story with Lore Generator</h2>
         <p>
@@ -23,7 +23,7 @@ export default function Features() {
       </div>
       <Slider
           images={loreImages}
-        />
+      />
       <div className={styles.featureUnit}>
         <h2 className={styles.unitTitle}>Make your city alive!</h2>
         <p>
@@ -31,9 +31,8 @@ export default function Features() {
         </p>
       </div>
       <Slider
-          images={cityImages}
-          captions
-        />
+        images={cityImages}
+      />
     </section>
   )
 }

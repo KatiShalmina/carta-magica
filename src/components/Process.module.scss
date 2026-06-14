@@ -13,7 +13,7 @@
   &::before {
     @media (min-width: 1280px) {
       position: absolute;
-      top: -40px;
+      top: 60px;
       left: -70px;
       z-index: 1;
       width: 300px;
@@ -36,9 +36,9 @@
 
 .processWrapper {
   padding-top: 4.3rem;
-  padding-right: clamp(1.2rem, 4vw, 4.3rem);
-  padding-bottom: 3rem;
-  padding-left: clamp(1.2rem, 4vw, 4.3rem);
+  padding-right: clamp(1.2rem, 7vw, 10.7rem);
+  padding-bottom: 4.3rem;
+  padding-left: clamp(1.2rem, 7vw, 10.7rem);
   font-size: 1.2rem;
   text-align: center;
 
@@ -48,6 +48,7 @@
 
   @media (min-width: 1280px) {
     padding-top: 6.2rem;
+    padding-bottom: 5.2rem;
     font-size: 1.4rem;
   }
 
@@ -78,19 +79,26 @@
 }
 
 .iconUnit {
-  margin-bottom: clamp(1.7rem, 4vw, 4.3rem);
+  margin-bottom: clamp(3rem, 4vw, 4.3rem);
 }
 
 .iconUnitText {
   margin-bottom: clamp(1.4rem, 4vw, 2.5rem);
 }
 
-.processUnit {
-  margin-bottom: clamp(1.2rem, 4vw, 4.3rem);
+.processUnits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(3rem, 4vw, 4.3rem);
 }
 
 .processUnitTitle {
   margin-bottom: clamp(1.2rem, 4vw, 2rem);
-  font-size: clamp(1.4rem, 4vw, 1.7rem);
+  font-size: 1.4rem;
   font-weight: 400;
+
+  @media (min-width: 1280px) {
+    font-size: 1.7rem;
+  }
 }
