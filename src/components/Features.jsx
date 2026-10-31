@@ -1,32 +1,65 @@
 import styles from './Features.module.scss'
+import Bullet from '../assets/icons/bullet.svg?react'
 
 export default function Features() {
   return (
-    <section className={styles.features} id='features'>
-      <h1 className='visuallyHidden'>Features</h1>
-      <div className={styles.featureUnit}>
-        <h2 className={styles.unitTitle}>Generate a city map in seconds</h2>
-        <p>
-          Set up parameters or sketch the terrain and city borders. Your map is ready in under a minute.
-        </p>
-      </div>
-      <div className={styles.featureUnit}>
-        <h2 className={styles.unitTitle}>Every street is a battlemap</h2>
-        <p>
-          No need to search for battlemaps anymore. Just zoom in, place your tokens, adjust the grid, and start an encounter.
-        </p>
-      </div>
-      <div className={styles.featureUnit}>
-        <h2 className={styles.unitTitle}>Play anywhere</h2>
-        <p>
-          Carta Magica supports playing in full 3D through Foundry VTT or directly in a web browser. Join the adventure online, or turn your tv into a gaming table!
-        </p>
-      </div>
-      <div className={styles.featureUnit}>
-        <h2 className={styles.unitTitle}>Your favorite setting</h2>
-        <p>
-          We’re creating Content Packs for a variety of settings, from medieval fantasy to cyberpunk and the modern world.
-        </p>
+    <section className={styles.feature} id='features'>
+      <div className={styles.featureWrapper}>
+        <div className={styles.featureUnit}>
+          <h2 className={styles.unitTitle}>Features</h2>
+          <h3 className={styles.featureUnitTitle}>World Creation & Customization</h3>
+          <ul className={styles.featureList}>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Generate grid-independent cities in seconds.
+            </li>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Customize every street, building, and landmark.
+            </li>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Adjust lighting to create the perfect atmosphere.
+            </li>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Import custom 3D and 2D assets.
+            </li>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Generate names, histories, and lore for your world.
+            </li>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Explore different settings with Content Packs.
+            </li>
+          </ul>
+        </div>
+        <div className={styles.featureUnit}>
+          <h3 className={styles.featureUnitTitle}>Playing</h3>
+          <ul className={styles.featureList}>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Turn any location into a battlemap.
+            </li>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Play online through Foundry VTT or directly in your browser.
+            </li>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Use a TV to play in-person.
+            </li>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Explore your world using isometric, free, and top-down cameras.
+            </li>
+            <li className={styles.featureItem}>
+              <Bullet width={40} height={40} />
+              Mark and find important locations with geotags.
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   )

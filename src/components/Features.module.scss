@@ -1,42 +1,66 @@
-.features {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: clamp(3.6rem, 7vw, 6.2rem);
-  padding-top: 4.3rem;
-  padding-right: clamp(1.2rem, 7vw, 10.7rem);
-  padding-bottom: 3rem;
-  padding-left: clamp(1.2rem, 7vw, 10.7rem);
-  font-size: 1.2rem;
-  text-align: center;
+.feature {
   scroll-margin-top: 152px;
+  color: var(--bg-primary);
+  background-color: var(--color-secondary);
 
   @media (min-width: 800px) {
-    padding-top: 5.2rem;
     scroll-margin-top: 147px;
   }
 
   @media (min-width: 1280px) {
-    padding-top: 6.2rem;
-    padding-bottom: 5.2rem;
     scroll-margin-top: 164px;
   }
+}
 
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 272px;
-    height: 21px;
-    content: '';
-    background: url('../assets/icons/divider-670.svg') center / 274px auto no-repeat;
+.featureWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.7rem, 7vw, 3.6rem);
+  padding-top: 4.3rem;
+  padding-right: clamp(1.2rem, 7vw, 10.7rem);
+  padding-bottom: clamp(4.3rem, 7vw, 6.2rem);
+  padding-left: clamp(1.2rem, 7vw, 10.7rem);
+  text-align: center;
 
-    @media (min-width: 800px) {
-      width: 700px;
-      height: 30px;
-      background: url('../assets/icons/divider-1159.svg') center / 700px auto no-repeat;
-    }
+   @media (min-width: 800px) {
+    padding-top: 5.2rem;
   }
+
+  @media (min-width: 1280px) {
+    padding-top: 6.2rem;
+  }
+}
+
+.unitTitle {
+  margin-bottom: clamp(1.4rem, 4vw, 3rem);
+  font-family: var(--logo-font);
+  font-size: clamp(3rem, 4vw, 4.3rem);
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.featureUnit {
+  max-width: 65ch;
+}
+
+.featureList {
+  text-align: left;
+}
+
+.featureItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1.2rem, 4vw, 1.7rem);
+}
+
+.featureUnitTitle {
+  margin-bottom: clamp(1.2rem, 4vw, 2rem);
+  font-size: clamp(1.7rem, 5vw, 2.5rem);
+  line-height: 1.2;
+  font-weight: 400;
 }
