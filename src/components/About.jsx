@@ -6,7 +6,7 @@ export default function About() {
     <section className={styles.about} id='about'>
       <div className={styles.aboutWrapper}>
         <h2 className={styles.unitTitle}>Stay in touch!</h2>
-        <p className={styles.aboutText}>We’re Albert and Ilya – longtime DMs and players who also happen to be software developers. We built Carta Magica to spend less time prepping and more time telling stories with our friends.</p>
+        <p className={styles.aboutText}>We’re Albert and Ilya, longtime GMs and players who also happen to be software developers. We built Carta Magica to spend less time prepping and more time telling stories with our friends.</p>
         <SupportButtonLow />
         <p className={`${styles.aboutText} ${styles.aboutLinks}`}>
           <span>
@@ -35,7 +35,7 @@ export default function About() {
           <span>
             <a
               className={styles.followReddit}
-              href='https://reddit.com'
+              href='https://www.reddit.com/r/Cartamagica/'
               target='_blank'
               rel='noopener noreferrer'
             >

@@ -8,7 +8,7 @@ export default function Process() {
     <section className={styles.process} id='process'>
       <h1 className='visuallyHidden'>Process</h1>
       <div className={styles.processWrapper}>
-        <h2 className={styles.unitTitle}>How does it work?</h2>
+        <h2 className={styles.unitTitle}>How it works:</h2>
         <div className={styles.iconUnit}>
           <p className={styles.iconUnitText}>Easy! Choose your setting and style.</p>
           <Icons />

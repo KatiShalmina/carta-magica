@@ -30,10 +30,10 @@ export default function Hero() {
         <h1 className={styles.mainTitle}>Carta Magica</h1>
 
         <div className={styles.introduction}>
-          <p>Create cities to tell your stories (Because Every Great  Story Needs a City).</p>
+          <h2 className={styles.heroTitle}>Build a city in less than a minute, play forever.</h2>
 
           {showShort && (
-            <p>Running a city campaign is awesome. Drawing every street? Not so much. We made Carta Magica to let you focus on the things that matter...{' '}
+            <p>Carta Magica is a city generator, 3D map editor and virtual tabletop for RPGs. Generate large, fully editable cities and landscapes in under a minute, customize every detail, and explore the new world with your players, online or around the table.{' '}
               <button
                 type='button'
                 className={styles.moreButton}
@@ -48,7 +48,7 @@ export default function Hero() {
 
           {showFull && (
             <>
-              <p>Running a city campaign is awesome. Drawing every street? Not so much. We made Carta Magica to let you focus on the things that matter!</p>
+              <p>Carta Magica is a city generator, 3D map editor and virtual tabletop for RPGs. Generate large, fully editable cities and landscapes in under a minute, customize every detail, and explore the new world with your players, online or around the table.</p>
 
               <div
                 id='more-intro'
@@ -84,8 +84,6 @@ export default function Hero() {
             cover800='/images/video-covers/800/placeholder-image.webp'
           />
         </div>
-
-        <p className={styles.tagline}>Carta Magica builds custom cities for any setting. Pick what matters for your lore – the layout, the landmarks, the mood – and let the app fill in the streets, shops, and alleys. Fine-tune the map to whatever direction your players decide to explore.</p>
       </div>
     </section>
   )

@@ -1,38 +1,38 @@
 import styles from './Features.module.scss'
-import Slider from './Slider'
-import { battleImages, loreImages, cityImages } from '../data/gallery'
+import VideoShort from './VideoShort'
 
 export default function Features() {
   return (
     <section className={styles.features} id='features'>
       <h1 className='visuallyHidden'>Features</h1>
       <div className={styles.featureUnit}>
-        <h2 className={styles.unitTitle}>Explore every street!</h2>
+        <h2 className={styles.unitTitle}>Generate a city map in seconds</h2>
         <p>
-          Zoom in from the city view straight to the battlemap. Every plaza, alley, or tavern is encounter-ready. No extra prep needed. Export your battlemaps straight into your favorite VTT.
+          Set up parameters or sketch the terrain and city borders. Your map is ready in under a minute.
         </p>
+        <VideoShort src='/images/shorts/CityAppears.webm' />
       </div>
-      <Slider
-          images={battleImages}
-      />
       <div className={styles.featureUnit}>
-        <h2 className={styles.unitTitle}>Create story with Lore Generator</h2>
+        <h2 className={styles.unitTitle}>Every street is a battlemap</h2>
         <p>
-          Drop in your world’s events and key figures, and the Lore Generator fills the gaps – naming streets, taverns, and temples to fit your story.
+          No need to search for battlemaps anymore. Just zoom in, place your tokens, adjust the grid, and start an encounter.
         </p>
+        <VideoShort src='/images/shorts/Battlemap.webm' />
       </div>
-      <Slider
-          images={loreImages}
-      />
       <div className={styles.featureUnit}>
-        <h2 className={styles.unitTitle}>Make your city alive!</h2>
+        <h2 className={styles.unitTitle}>Play anywhere</h2>
         <p>
-          Creation is just the beginning! Every part of the city is editable – landmarks, shadows, building placement, colors, even tiny details.
+          Carta Magica supports playing in full 3D through Foundry VTT or directly in a web browser. Join the adventure online, or turn your tv into a gaming table!
         </p>
+        <VideoShort src='/images/shorts/Foundry.webm' />
       </div>
-      <Slider
-        images={cityImages}
-      />
+      <div className={styles.featureUnit}>
+        <h2 className={styles.unitTitle}>Your favorite setting</h2>
+        <p>
+          We’re creating Content Packs for a variety of settings, from medieval fantasy to cyberpunk and the modern world.
+        </p>
+        <VideoShort src='/images/shorts/Foundry.webm' />
+      </div>
     </section>
   )
 }
