@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from './Hero.module.scss'
 import Video from './Video'
+import VideoShort from './VideoShort'
 
 export default function Hero() {
   const [expanded, setExpanded] = useState(false)
@@ -27,10 +28,9 @@ export default function Hero() {
   return (
     <section className={styles.hero} id='top'>
       <div className={styles.heroWrapper}>
-        <h1 className={styles.mainTitle}>Carta Magica</h1>
-
         <div className={styles.introduction}>
-          <h2 className={styles.heroTitle}>Build a city in less than a minute, play forever.</h2>
+          <h1 className={styles.mainTitle}>Carta Magica</h1>
+          <h2 className={styles.heroTitle}>Build a city in less than a minute. Play forever</h2>
 
           {showShort && (
             <p>Carta Magica is a city generator, 3D map editor and virtual tabletop for RPGs. Generate large, fully editable cities and landscapes in under a minute, customize every detail, and explore the new world with your players, online or around the table.{' '}
@@ -78,11 +78,40 @@ export default function Hero() {
 
         <div className={styles.videoWrapper}>
           <Video
-            videoId='JMBw_RcDbEQ'
+            videoId='fhmm_JDvD-c'
             coverOriginal='/images/video-covers/original/placeholder-image.webp'
             cover1280='/images/video-covers/1280/placeholder-image.webp'
             cover800='/images/video-covers/800/placeholder-image.webp'
           />
+        </div>
+
+        <div className={styles.heroUnit}>
+          <h2 className={styles.heroUnitTitle}>Generate a city map in seconds</h2>
+          <p>
+            Set up parameters or sketch the terrain and city borders. Your map is ready in under a minute.
+          </p>
+          <VideoShort src='/images/shorts/CityAppears.webm' />
+        </div>
+        <div className={styles.heroUnit}>
+          <h2 className={styles.heroUnitTitle}>Every street is a battlemap</h2>
+          <p>
+            No need to search for battlemaps anymore. Just zoom in, place your tokens, adjust the grid, and start an encounter.
+          </p>
+          <VideoShort src='/images/shorts/Battlemap.webm' />
+        </div>
+        <div className={styles.heroUnit}>
+          <h2 className={styles.heroUnitTitle}>Play anywhere</h2>
+          <p>
+            Carta Magica supports playing in full 3D through Foundry VTT or directly in a web browser. Join the adventure online, or turn your tv into a gaming table!
+          </p>
+          <VideoShort src='/images/shorts/Foundry.webm' />
+        </div>
+        <div className={styles.heroUnit}>
+          <h2 className={styles.heroUnitTitle}>Your favorite setting</h2>
+          <p>
+                  We’re creating Content Packs for a variety of settings, from medieval fantasy to cyberpunk and the modern world.
+          </p>
+          <VideoShort src='/images/shorts/Foundry.webm' />
         </div>
       </div>
     </section>

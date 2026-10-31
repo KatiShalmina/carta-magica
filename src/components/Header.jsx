@@ -6,9 +6,8 @@ import MobileMenu from './MobileMenu'
 import SupportButtonHigh from './SupportButtonHigh'
 
 const navItems = [
-  { id: 'features', label: 'Features' },
   { id: 'process', label: 'How it works' },
-  { id: 'release', label: 'On release' },
+  { id: 'features', label: 'Features' },
   { id: 'about', label: 'About us' },
 ]
 
