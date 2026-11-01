@@ -10,27 +10,27 @@ export default function Features() {
           <h3 className={styles.featureUnitTitle}>World Creation & Customization</h3>
           <ul className={styles.featureList}>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Generate grid-independent cities in seconds.
             </li>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Customize every street, building, and landmark.
             </li>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Adjust lighting to create the perfect atmosphere.
             </li>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Import custom 3D and 2D assets.
             </li>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Generate names, histories, and lore for your world.
             </li>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Explore different settings with Content Packs.
             </li>
           </ul>
@@ -39,23 +39,23 @@ export default function Features() {
           <h3 className={styles.featureUnitTitle}>Playing</h3>
           <ul className={styles.featureList}>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Turn any location into a battlemap.
             </li>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Play online through Foundry VTT or directly in your browser.
             </li>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Use a TV to play in-person.
             </li>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Explore your world using isometric, free, and top-down cameras.
             </li>
             <li className={styles.featureItem}>
-              <Bullet width={40} height={40} />
+              <Bullet />
               Mark and find important locations with geotags.
             </li>
           </ul>

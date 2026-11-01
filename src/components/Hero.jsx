@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from './Hero.module.scss'
 import Video from './Video'
 import VideoShort from './VideoShort'
+import Icons from './Icons'
 
 export default function Hero() {
   const [expanded, setExpanded] = useState(false)
@@ -79,9 +80,9 @@ export default function Hero() {
         <div className={styles.videoWrapper}>
           <Video
             videoId='fhmm_JDvD-c'
-            coverOriginal='/images/video-covers/original/placeholder-image.webp'
-            cover1280='/images/video-covers/1280/placeholder-image.webp'
-            cover800='/images/video-covers/800/placeholder-image.webp'
+            coverOriginal='/images/video-covers/original/cover_original.webp'
+            cover1280='/images/video-covers/1280/cover_1280.webp'
+            cover800='/images/video-covers/800/cover_800.webp'
           />
         </div>
 
@@ -109,9 +110,9 @@ export default function Hero() {
         <div className={styles.heroUnit}>
           <h2 className={styles.heroUnitTitle}>Your favorite setting</h2>
           <p>
-                  We’re creating Content Packs for a variety of settings, from medieval fantasy to cyberpunk and the modern world.
+            We’re creating Content Packs for a variety of settings, from medieval fantasy to cyberpunk and the modern world.
           </p>
-          <VideoShort src='/images/shorts/Foundry.webm' />
+          <Icons />
         </div>
       </div>
     </section>

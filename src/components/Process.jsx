@@ -1,6 +1,6 @@
 import styles from './Process.module.scss'
 import Slider from './Slider'
-import { processSurpriseImages } from '../data/gallery'
+import { processImages } from '../data/gallery'
 import VideoShort from './VideoShort'
 import Architect from '../assets/assistants/Ar_1.png'
 import Builder from '../assets/assistants/Bd_1.png'
@@ -29,7 +29,7 @@ export default function Process() {
             alt='The Architect'
           />
           <p>The Architect generates multiple 2D city plans to choose from.</p>
-          <VideoShort src='/images/shorts/CityAppears.webm' />
+          <VideoShort src='/images/shorts/Generator.webm' />
         </div>
 
         <div className={styles.processUnit}>
@@ -48,7 +48,7 @@ export default function Process() {
           <img
             className={styles.assistantImage}
             src={Scribe}
-            alt='The Builder'
+            alt='The Scribe'
           />
           <p>The Scribe generates names and lore for streets, buildings, and landmarks based on your input.</p>
           <VideoShort src='/images/shorts/Tags.webm' />
@@ -63,7 +63,7 @@ export default function Process() {
         <div className={styles.processUnit}>
           <p>Control your world and let Carta Magica do the heavy lifting!</p>
           <Slider
-            images={processSurpriseImages}
+            images={processImages}
           />
         </div>
       </div>

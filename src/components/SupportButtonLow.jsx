@@ -8,7 +8,7 @@ export default function SupportButtonLow() {
       target='_blank'
       rel='noopener noreferrer'
     >
-      <span>Support us on Kickstarter!</span>
+      <span>Notify me on Kickstarter</span>
     </a>
   )
 }
